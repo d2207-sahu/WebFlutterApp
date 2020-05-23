@@ -110,6 +110,9 @@ class _BottomSheetPageState extends State<BottomSheetPage> {
                 ),
               ),
               FlatButton(
+                color: Colors.black,
+                splashColor: Colors.white,
+                textColor: Colors.white,
                 onPressed: () {},
                 child: Text('Send'),
               )
