@@ -15,19 +15,49 @@
   <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 
   <title>divyanshucompany</title>
-  <link rel="manifest" href="manifest.json">
+  <!-- If Want to have the WebApp Installable Then Add This  -->
+<!--  <link rel="manifest" href="manifest.json">-->
 </head>
 <body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+<script>
+    // TODO: Replace the following with your app's Firebase project configuration.
+    // See: https://support.google.com/firebase/answer/7015592
+    var firebaseConfig = {
+      apiKey: "AIzaSyCNgs0hFBfY8X9sMweCR5Tb88_soQHqdwU",
+      authDomain: "strangers-d6c68.firebaseapp.com",
+      databaseURL: "https://strangers-d6c68.firebaseio.com",
+      projectId: "strangers-d6c68",
+      storageBucket: "strangers-d6c68.appspot.com",
+      messagingSenderId: "889965156881",
+      appId: "1:889965156881:web:a96c473947a0a1afcaafb0",
+      measurementId: "G-PGMZ45Y9HV"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js');
-      });
-    }
-  </script>
+<!-- If Want to have the WebApp Installable Then Add This  -->
+
+<!--<script>-->
+<!--    if ('serviceWorker' in navigator) {-->
+<!--      window.addEventListener('load', function () {-->
+<!--        navigator.serviceWorker.register('flutter_service_worker.js');-->
+<!--      });-->
+<!--    }-->
+<!--  </script>-->
   <script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>
